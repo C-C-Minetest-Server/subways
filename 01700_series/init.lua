@@ -146,5 +146,5 @@ local train_def = {
 subways.register_subway("01700_series", train_def, "01700 Series", "01700_series_inv.png")
 
 if advtrains.register_wagon_alias then
-    advtrains.register_wagon_alias("advtrains:red_subway_wagon", "subways_01700_series:01700_series")
+    advtrains.register_wagon_alias("advtrains:01700_series", "subways_01700_series:01700_series")
 end
