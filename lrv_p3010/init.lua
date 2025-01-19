@@ -17,7 +17,7 @@ local train_def = {
         textures = {
             "p3010.png",
         },
-        base_texture = "p3010.b3d",
+        base_texture = "p3010.png",
         base_texture_size = 256,
         light_texture_backwards = "p3010_backwards.png",
         light_texture_forwards = "p3010_forwards.png",
