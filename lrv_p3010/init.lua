@@ -10,15 +10,56 @@ local train_def = {
             {"advtrains:wheel", "", "advtrains:wheel"},
         },
     },
-    displays = {},
-    livery_def = {},
+    displays = {
+        {
+            background_size = 120,
+            display = "outside_first_line",
+            offset = {x = 16, y = 13},
+            slot = 2,
+        },
+        {
+            background_size = 140,
+            display = "outside_first_line",
+            offset = {x = 16, y = 2},
+            slot = 3,
+        },
+    },
+    livery_def = {
+        livery_template = {
+            name = "LRV P3010",
+            designer = "Sam Matzko",
+            texture_license = "CC-BY-SA-3.0",
+            texture_creator = "Sam Matzko",
+            notes = "Color overrides for exterior accents.",
+            base_textures = {
+                "p3010.png",
+            },
+            overlays = {
+                [1] = {name = "Exterior Accents", slot_idx = 1, texture = "p3010_livery.png", alpha = 255},
+                [2] = {name = "Seat Accents", slot_idx = 1, texture = "p3010_seat_livery.png", alpha = 255},
+            },
+        },
+        predefined_livery = {
+            name = "Standard Yellow",
+            notes = "The default yellow color scheme.",
+            livery_design = {
+                livery_template_name = "LRV P3010",
+                overlays = {
+                    [1] = {id = 1, color = "#ffff00"},
+                    [2] = {id = 2, color = "#e5c21c"},
+                },
+            },
+        },
+    },
     wagon_def = {
         mesh = "p3010.b3d",
         textures = {
             "p3010.png",
+            "subways_displays.png",
+            "subways_displays.png",
         },
         base_texture = "p3010.png",
-        base_texture_size = 256,
+        base_texture_size = 512,
         light_texture_backwards = "p3010_backwards.png",
         light_texture_forwards = "p3010_forwards.png",
         light_texture_pos = {x = 0, y = 0},
