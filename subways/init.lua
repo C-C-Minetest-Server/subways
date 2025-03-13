@@ -3,6 +3,7 @@ local modpath = minetest.get_modpath("subways")
 
 -- Register the Tomlinson coupler
 advtrains.register_coupler_type("tomlinson", "Tomlinson Coupler")
+advtrains.register_coupler_type("shibata", "Shibata Coupler")
 
 -- Variables for optional mod availability
 subways.use_advtrains_livery_designer = minetest.get_modpath("advtrains_livery_designer") and advtrains_livery_designer
