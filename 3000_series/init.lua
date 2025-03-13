@@ -160,16 +160,10 @@ local train_intermediate_def = {
     },
     displays = {
         {
-            background_size = 120,
-            display = "outside_first_line",
-            offset = {x = 16, y = 13},
-            slot = 2,
-        },
-        {
             background_size = 140,
             display = "outside_first_line",
-            offset = {x = 16, y = 2},
-            slot = 3,
+            offset = {x = 16, y = 5},
+            slot = 2,
         },
     },
     livery_def = {
@@ -297,5 +291,5 @@ local train_intermediate_def = {
     },
 }
 
-subways.register_subway("3000_series_lead", train_def, "3000 Series Lead", "3000_series_lead_inv.png")
-subways.register_subway("3000_series_intermediate", train_intermediate_def, "3000 Series Intermediate", "3000_series_intermediate_inv.png")
+subways.register_subway("3000_series_lead", train_def, "3000 Series Lead Car", "3000_series_lead_inv.png")
+subways.register_subway("3000_series_intermediate", train_intermediate_def, "3000 Series Intermediate Car", "3000_series_intermediate_inv.png")
