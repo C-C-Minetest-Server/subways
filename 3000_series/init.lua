@@ -14,13 +14,13 @@ local train_def = {
         {
             background_size = 120,
             display = "outside_first_line",
-            offset = {x = 16, y = 13},
+            offset = {x = 16, y = 7},
             slot = 2,
         },
         {
             background_size = 140,
             display = "outside_first_line",
-            offset = {x = 16, y = 2},
+            offset = {x = 16, y = 5},
             slot = 3,
         },
     },
