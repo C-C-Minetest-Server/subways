@@ -5,7 +5,7 @@ local train_def = {
     craft = {
         output = "subways_3000_series_lead:3000_series_lead",
         recipe = {
-            {"default:steelblock", "", "default:steelblock"},
+            {"default:steelblock", "default:mese_crystal_fragment", "default:steelblock"},
             {"xpanes:pane_flat", "dye:red", "xpanes:pane_flat"},
             {"advtrains:wheel", "", "advtrains:wheel"},
         },
